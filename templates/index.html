@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breast Cancer Prediction Model</title>
+</head>
+<body>
+    <h1>Enter Details</h1>
+    <form action="/" method="POST">
+        <input type="number" name="Clump Thickness" placeholder="Clump Thickness">
+        <input type="number" name="Uniformity of Cell Size" placeholder="Uniformity of Cell Size">
+        <input type="number" name="Uniformity of Cell Shape" placeholder="Uniformity of Cell Shape">
+        <input type="number" name="Single Epithelial Cell Size" placeholder="Single Epithelial Cell Size">
+        <input type="number" name="Bare Nuclei" placeholder="Bare Nuclei">
+        <input type="number" name="Bland Chromatin" placeholder="Bland Chromatin">
+        <input type="number" name="Normal Nucleoli" placeholder="Normal Nucleoli">
+        <input type="submit">
+    </form>
+    <p>Cancer Status:</p>
+    {{machine_pred}}
+</body>
+</html>
